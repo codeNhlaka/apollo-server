@@ -1,0 +1,25 @@
+{
+  "name": "apollo-server-aws-dynamodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^15.14.0",
+    "apollo": "^2.33.4",
+    "apollo-server": "^2.25.2",
+    "aws-sdk": "^2.938.0",
+    "dynamo-converters": "^5.0.2",
+    "graphql": "^15.5.1",
+    "nodemon": "^2.0.9",
+    "ts-node": "^10.0.0"
+  }
+}
