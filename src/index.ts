@@ -98,10 +98,10 @@ const resolvers: IResolvers = {
       getBooks: () => {
           return dynamodbAPI.getBooks();
       },
-      getBook: (_,{ id }, __) => {
+      getBook: (_,{ id },__) => {
             return dynamodbAPI.getBook(id);
       },
-      getBookByAuthor: (_, { author }, __) => {
+      getBookByAuthor: (_, { author },__) => {
         return dynamodbAPI.getBookByAuthor(author);
       }
     },
